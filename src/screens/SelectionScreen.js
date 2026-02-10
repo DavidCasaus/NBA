@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import {
   View,
@@ -23,9 +22,10 @@ const SelectionScreen = ({ navigation }) => {
   };
 
   const handleStartGame = () => {
-    navigation.navigate('Game', {
+    navigation.navigate('Match', {
       homeTeam: teams[homeTeamIndex],
       awayTeam: teams[awayTeamIndex],
+      resetKey: Date.now(),
     });
   };
 
@@ -240,6 +240,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'monospace',
   },
-})
+});
 
 export default SelectionScreen;

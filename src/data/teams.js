@@ -36,7 +36,7 @@ export const teams = [
     city: "Chicago",
     logo: "🐂",
     primaryColor: "#CE1141",
-    secondaryColor: "#000000",
+    secondaryColor: "#484141",
     players: [
       { id: 11, name: "DeMar DeRozan", number: 11, position: "SG" },
       { id: 12, name: "Zach LaVine", number: 8, position: "SG" },
