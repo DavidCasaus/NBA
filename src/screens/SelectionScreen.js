@@ -58,17 +58,16 @@ const SelectionScreen = ({ navigation }) => {
         style={[styles.changeButton, { backgroundColor: team.primaryColor }]}
         onPress={onChangeTeam}
       >
-        <Text style={styles.changeButtonText}>CHANGE</Text>
+        <Text style={styles.changeButtonText}>CAMBIA</Text>
       </TouchableOpacity>
     </View>
   );
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Header estilo arcade */}
       <View style={styles.header}>
         <Text style={styles.title}>★ NBA JAM ★</Text>
-        <Text style={styles.subtitle}>SELECT YOUR TEAM</Text>
+        <Text style={styles.subtitle}>SELECCIONA TU EQUIPO</Text>
       </View>
 
       <View style={styles.mainContent}>
@@ -83,9 +82,8 @@ const SelectionScreen = ({ navigation }) => {
         </View>
       </View>
 
-      {/* Botón de inicio estilo arcade */}
       <TouchableOpacity style={styles.startButton} onPress={handleStartGame}>
-        <Text style={styles.startButtonText}>► START GAME ◄</Text>
+        <Text style={styles.startButtonText}>► EMPEZAR JUEGO ◄</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
